@@ -122,6 +122,11 @@ std::size_t CURLWriteFunction(PSTR ptr, std::size_t size, std::size_t nmemb,
   return size * nmemb;
 }
 
+std::size_t CURLDiscardFunction(PSTR ptr, std::size_t size, std::size_t nmemb,
+                                PVOID userdata) {
+  return size * nmemb;
+}
+
 int main(int argc, char *argv[]) {
   if (!ParseCommandLine(argc, argv, &Options)) {
     PrintHelp();
@@ -137,11 +142,11 @@ int main(int argc, char *argv[]) {
       return 1;
     }
     if (Options.verbose) curl_easy_setopt(curl.get(), CURLOPT_VERBOSE, 1);
-    curl_easy_setopt(curl.get(), CURLOPT_WRITEFUNCTION, CURLWriteFunction);
     if (Options.login_url) {
       curl_easy_setopt(curl.get(), CURLOPT_URL, Options.login_url);
       curl_easy_setopt(curl.get(), CURLOPT_POSTFIELDS, Options.login_post_data);
       curl_easy_setopt(curl.get(), CURLOPT_COOKIEFILE, "");
+      curl_easy_setopt(curl.get(), CURLOPT_WRITEFUNCTION, CURLDiscardFunction);
       auto res = curl_easy_perform(curl.get());
       if (res != CURLE_OK) return 1;
     }
