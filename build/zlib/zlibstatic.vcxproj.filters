@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\zlib\adler32.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\compress.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\crc32.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\deflate.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\gzclose.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\gzlib.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\gzread.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\gzwrite.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\inflate.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\infback.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\inftrees.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\inffast.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\trees.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\uncompr.c" />
+    <ClCompile Include="$(SolutionDir)..\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)zconf.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\zlib.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\crc32.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\deflate.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\gzguts.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\inffast.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\inffixed.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\inflate.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\inftrees.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\trees.h" />
+    <ClInclude Include="$(SolutionDir)..\zlib\zutil.h" />
+  </ItemGroup>
+</Project>
