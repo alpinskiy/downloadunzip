@@ -89,33 +89,33 @@ bool ParseCommandLine(int argc, PSTR argv[], ProgramOptions* options) {
 void PrintHelp() {
   // clang-format off
   std::cerr << "Download and unzip a file.\n";
-  std::cerr << '\n';
+  std::cerr << "\n";
   std::cerr << "Usage:\n";
   std::cerr << "  download-unzip [OPTIONS] URL\n";
-  std::cerr << '\n';
+  std::cerr << "\n";
   std::cerr << "Options:\n";
   std::cerr << "  --login PATH\n";
   std::cerr << "  POST request will be made here before downloading.\n";
-  std::cerr << "  All received cookies will be sent with the following GET ";
-  std::cerr << "  request.\nMust be relative to URL host.\n";
-  std::cerr << '  \n';
+  std::cerr << "  All received cookies will be sent with the following GET request.\n";
+  std::cerr << "  Should be relative to URL host.\n";
+  std::cerr << "  \n";
   std::cerr << "  --login-data DATA\n";
   std::cerr << "  x-www-form-urlencoded data to be sent with login POST request.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   std::cerr << "  --overwrite\n";
   std::cerr << "  Overwrite local files.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   std::cerr << "  --sha256 HEXSTRING\n";
   std::cerr << "  SHA-256 digest to verify file integrity.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   std::cerr << "  --save\n";
   std::cerr << "  Save ZIP file to disk.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   std::cerr << "  --dryrun\n";
   std::cerr << "  Operate as usual but write nothing to disk.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   std::cerr << "  --verbose\n";
   std::cerr << "  Set verbose mode on.\n";
-  std::cerr << '  \n';
+  std::cerr << "  \n";
   // clang-format on
 }
