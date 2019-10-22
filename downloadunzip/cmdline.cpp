@@ -95,7 +95,7 @@ void PrintHelp() {
   std::cerr << "\n";
   std::cerr << "Options:\n";
   std::cerr << "  --login PATH\n";
-  std::cerr << "  POST request will be made here before downloading.\n";
+  std::cerr << "  POST request will be made before downloading.\n";
   std::cerr << "  All received cookies will be sent with the following GET request.\n";
   std::cerr << "  Should be relative to URL host.\n";
   std::cerr << "  \n";
