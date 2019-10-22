@@ -12,7 +12,7 @@
 ## Опции
 ```
   --login PATH
-  POST request will be made here before downloading.
+  POST request will be made before downloading.
   All received cookies will be sent with the following GET request.
   Should be relative to URL host.
 
