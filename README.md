@@ -1,4 +1,4 @@
-# DownloadUnzip
+# DownloadUnzip [![Build status](https://ci.appveyor.com/api/projects/status/x0kpycvww4yb270k?svg=true)](https://ci.appveyor.com/project/alpinskiy/downloadunzip)
 
 Скачивает и распаковывает ZIP файл в текущую директорию. В случае успеха - код возврата 0. В случае ошибки - код возврата 1 и сообщение в STDERR.
 
