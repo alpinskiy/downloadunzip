@@ -6,7 +6,7 @@ configuration: Release
 build:
   project: build/downloadunzip.sln
 after_build:
-  - cmd: 7z a downloadunzip.zip build\out\x64\Release\downloadunzip\downloadunzip.exe
-  - cmd: 7z a downloadunzip.zip build\out\x64\Release\downloadunzip\downloadunzip.pdb
+  - cmd: 7z a downloadunzip.zip %APPVEYOR_BUILD_FOLDER%\build\out\x64\Release\downloadunzip\downloadunzip.exe
+  - cmd: 7z a downloadunzip.zip %APPVEYOR_BUILD_FOLDER%\build\out\x64\Release\downloadunzip\downloadunzip.pdb
 artifacts:
   path: downloadunzip.zip
