@@ -70,16 +70,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)out\$(Configuration)\$(ProjectName)\</OutDir>
-    <IntDir>$(SolutionDir)tmp\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)out\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
-    <IntDir>$(SolutionDir)tmp\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)out\$(Configuration)\$(ProjectName)\</OutDir>
-    <IntDir>$(SolutionDir)tmp\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\$(ProjectName)\</OutDir>
@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)out\$(Configuration)\libcurl\;$(SolutionDir)out\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\libcurl\;$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcurl.lib;Ws2_32.lib;crypt32.lib;Bcrypt.lib;advapi32.lib;zlibstatic.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -113,7 +113,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)out\$(Configuration)\libcurl\;$(SolutionDir)out\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\libcurl\;$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcurl.lib;Ws2_32.lib;crypt32.lib;Bcrypt.lib;advapi32.lib;zlibstatic.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -132,7 +132,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)out\$(Configuration)\libcurl\;$(SolutionDir)out\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\libcurl\;$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcurl.lib;Ws2_32.lib;crypt32.lib;Bcrypt.lib;advapi32.lib;zlibstatic.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -151,7 +151,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)out\$(Configuration)\libcurl\;$(SolutionDir)out\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\libcurl\;$(SolutionDir)out\$(PlatformTarget)\$(Configuration)\zlibstatic\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcurl.lib;Ws2_32.lib;crypt32.lib;Bcrypt.lib;advapi32.lib;zlibstatic.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
