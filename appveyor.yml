@@ -1,10 +1,12 @@
 image: Visual Studio 2019
 install:
   git submodule update --init --recursive
+platform: x64
+configuration: Release
 build:
   project: build/downloadunzip.sln
 after_build:
-  - cmd: 7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.exe
-  - cmd: 7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.pdb
+  - cmd: 7z a downloadunzip.zip build\out\$(platform)\$(configuration)\downloadunzip\downloadunzip.exe
+  - cmd: 7z a downloadunzip.zip build\out\$(platform)\$(configuration)\downloadunzip\downloadunzip.pdb
 artifacts:
   path: downloadunzip.zip
