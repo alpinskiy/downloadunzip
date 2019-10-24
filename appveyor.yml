@@ -4,7 +4,7 @@ install:
 build:
   project: build/downloadunzip.sln
 after_build:
-  7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.exe
-  7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.pdb
+  - cmd: 7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.exe
+  - cmd: 7z a downloadunzip.zip build\out\$(configuration)\downloadunzip\downloadunzip.pdb
 artifacts:
   path: downloadunzip.zip
