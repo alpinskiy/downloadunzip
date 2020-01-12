@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_pq.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_map.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_queue.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_frame.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_buf.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_stream.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_outbound_item.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_session.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_submit.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_helper.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_npn.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_hd.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_hd_huffman.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_hd_huffman_data.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_version.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_priority_spec.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_option.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_callbacks.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_mem.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_http.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_rcbuf.c" />
+    <ClCompile Include="$(SolutionDir)..\nghttp2\lib\nghttp2_debug.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(ProjectDir)version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{871E7BC9-C987-3D66-883D-368701D427F8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
